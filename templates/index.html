@@ -9,6 +9,10 @@
             integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
             crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- aos-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
 
 </head>
 <style>
@@ -22,6 +26,33 @@
         border-color: #5bc0de;
         box-shadow: none;
     }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    /* Default styles for larger screens */
+    p {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    /* Media query for smaller screens */
+    @media (max-width: 768px) {
+        p {
+            font-size: 14px;
+            line-height: 1.3;
+        }
+    }
+
+
+    /* Fallback for browsers that don't support scroll-behavior */
+    @media screen and (prefers-reduced-motion: reduce) {
+        html {
+            scroll-behavior: auto;
+        }
+    }
+
 
 </style>
 <body>
@@ -61,13 +92,9 @@
         </div>
     </div>
 </nav>
-<section
-        id="section1"
-        class="d-flex justify-content-center align-items-center vh-100"
-        data-aos="fade-up"
-        data-aos-duration="1000"
-        data-aos-once="false"
->
+<section id="section1" class="d-flex justify-content-center align-items-center vh-100" data-aos="fade-up"
+         data-aos-duration="1000" data-aos-once="true">
+
     <div class="container-fluid text-center">
         <h1 class="display-4 mb-5 animated fadeInDown">
             Hi, I'm <span class="text-primary">Karthik Thovinakere.</span>
@@ -78,10 +105,10 @@
 
 
         <div class="d-flex justify-content-center mb-5">
-            <a class="btn btn-primary btn-lg me-5 animated fadeIn btn-contact"
+            <a class="btn btn-primary btn-lg me-5 animated fadeIn btn-contact "
                href="#section2"
                role="button">
-                <i class="bi bi-controller btn-icon"></i> Get Started
+                <i class="bi bi-controller btn-icon center"></i> Get Started
             </a>
         </div>
         <div class="d-flex justify-content-center mb-5">
@@ -93,6 +120,7 @@
         </div>
     </div>
 </section>
+
 <section
         id="section2"
         class="d-flex justify-content-center align-items-center vh-100"
@@ -103,45 +131,106 @@
     <div class="container-fluid text-center">
         <div class="row">
             <div class="col-md-12">
-                <h2>Video Games</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec
-                    mauris risus. Nam lobortis ipsum eget lectus suscipit, vitae
-                    congue sem efficitur. Integer ac nibh nibh. Ut et lacus justo. Ut
-                    tincidunt viverra lacus, vel interdum nulla malesuada in. Integer
-                    vel tincidunt quam. Fusce varius pharetra tellus vel suscipit.
-                    Vestibulum venenatis maximus ante, ac egestas tellus tincidunt
-                    eget. Ut nec arcu quis justo mollis hendrerit.
+                <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Video Games</h2>
+                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                    In my free time, I enjoy playing video games as a hobby, with a particular focus on first-person
+                    shooter (FPS) games.
+                </p>
+                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                    I find the immersive nature of these games to be especially engaging, as I can
+                    fully embody the character I am playing and experience the game world from a first-person
+                    perspective.
+                </p>
+                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
+                    Some of my favorite FPS games include Valorant, CS:GO, and Overwatch, each of which
+                    presents unique challenges and requires strategic thinking and fast reflexes.
+                </p>
+                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+                    In addition to FPS games, I also enjoy playing single-player games such as God of War and Red Dead
+                    Redemption, which
+                    offer rich, narrative-driven experiences that allow me to fully immerse myself in the game world and
+                    explore at my own pace.
+                </p>
+                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1200">
+                    Overall, gaming provides a fun and rewarding way for me to unwind and
+                    exercise my mind in my free time.
                 </p>
             </div>
         </div>
     </div>
 </section>
 
-<section
-        id="section3"
-        class="d-flex justify-content-center align-items-center vh-100"
-        data-aos="fade-up"
-        data-aos-duration="1000"
-        data-aos-once="false"
->
-    <div class="container-fluid text-center">
+
+<section id="section3" class="d-flex justify-content-center align-items-center vh-100" data-aos="fade-up"
+         data-aos-duration="1000" data-aos-once="false">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
-                <h2>Section 3</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec
-                    mauris risus. Nam lobortis ipsum eget lectus suscipit, vitae
-                    congue sem efficitur. Integer ac nibh nibh. Ut et lacus justo. Ut
-                    tincidunt viverra lacus, vel interdum nulla malesuada in. Integer
-                    vel tincidunt quam. Fusce varius pharetra tellus vel suscipit.
-                    Vestibulum venenatis maximus ante, ac egestas tellus tincidunt
-                    eget. Ut nec arcu quis justo mollis hendrerit.
-                </p>
+                <h2>Favorite Games</h2>
+                <div class="table-responsive">
+                    <table class="table table-striped table-bordered table-hover">
+                        <thead>
+                        <tr>
+                            <th>Game</th>
+                            <th>Genre</th>
+                            <th>Release Year</th>
+                            <th>Platform</th>
+                            <th>Learn More</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Valorant</td>
+                            <td>First-person shooter</td>
+                            <td>2020</td>
+                            <td>PC</td>
+                            <td><a href="https://playvalorant.com/en-us/" class="btn btn-link text-decoration-none"><i
+                                    class="bi bi-arrow-right-circle"></i> Learn More</a></td>
+                        </tr>
+                        <tr>
+                            <td>CS:GO</td>
+                            <td>First-person shooter</td>
+                            <td>2012</td>
+                            <td>PC</td>
+                            <td><a href="https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/"
+                                   class="btn btn-link text-decoration-none"><i class="bi bi-arrow-right-circle"></i>
+                                Learn More</a></td>
+                        </tr>
+                        <tr>
+                            <td>Overwatch</td>
+                            <td>First-person shooter</td>
+                            <td>2016</td>
+                            <td>PC, PlayStation 4, Xbox One, Nintendo Switch</td>
+                            <td><a href="https://playoverwatch.com/en-us/" class="btn btn-link text-decoration-none"><i
+                                    class="bi bi-arrow-right-circle"></i> Learn More</a></td>
+                        </tr>
+                        <tr>
+                            <td>God of War</td>
+                            <td>Action-adventure</td>
+                            <td>2018</td>
+                            <td>PlayStation 4, PlayStation 5</td>
+                            <td><a href="https://www.playstation.com/en-us/games/god-of-war/"
+                                   class="btn btn-link text-decoration-none"><i class="bi bi-arrow-right-circle"></i>
+                                Learn More</a></td>
+                        </tr>
+                        <tr>
+                            <td>Red Dead Redemption</td>
+                            <td>Action-adventure</td>
+                            <td>2010</td>
+                            <td>PlayStation 3, Xbox 360</td>
+                            <td><a href="https://www.rockstargames.com/reddeadredemption/"
+                                   class="btn btn-link text-decoration-none"><i class="bi bi-arrow-right-circle"></i>
+                                Learn More</a></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </div>
 </section>
+
+
 <section
         id="section4"
         class="d-flex justify-content-center align-items-center vh-100"
@@ -190,7 +279,7 @@
         </div>
     </div>
 </section>
-<section id="section6" class="d-flex justify-content-center align-items-center vh-100" data-aos="fade-up"
+<section id="section6" class="d-flex justify-content-center align-items-center vh-100" data-aos="fade-in"
          data-aos-duration="1000" data-aos-once="false">
     <div class="container-fluid text-center">
         <div class="row">
@@ -230,5 +319,5 @@
 </body>
 </html>
 <script>
-
+    AOS.init();
 </script>
