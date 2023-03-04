@@ -72,6 +72,11 @@
         margin-bottom: 10px; /* Add some space between paragraphs */
     }
 
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
 
 </style>
 <body>
@@ -370,7 +375,13 @@
 
 
 </body>
+<footer>
+    <div class="bg-dark text-white text-center">
+        karthik Thovinakere - &copy;{% now 'Y' %}
+    </div>
+</footer>
 </html>
+
 <script>
     AOS.init();
 
