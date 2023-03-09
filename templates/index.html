@@ -1,23 +1,33 @@
+<!-- #  Copyright (c) 2023 - All rights reserved.
+#  Created by Karthik Thovinakere for PROCTECH 4IT3/SEP 6IT3.
+#  SoA Notice: I Karthik Thovinakere, 400140562 certify that this material is my original work.
+#  I certify that no other person's work has been used without due acknowledgement.
+#  I have also not made my work available to anyone else without their due acknowledgement.-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Title</title>
+    <title>Karthik's Hobbies :)</title>
+    <!-- Favicon -->
+    <link rel="icon" href="https://img.icons8.com/ios/50/000000/controller.png"/>
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
             crossorigin="anonymous"></script>
+    <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <!-- aos-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-
-
 </head>
+<!-- Custom CSS -->
 <style>
+
     .btn-contact:hover {
         background-color: #a5a7a9;
         border-color: #f0ad4e;
@@ -30,7 +40,11 @@
     }
 
     html {
-        scroll-behavior: smooth;
+        scroll-behavior: auto;
+    }
+
+    body {
+        overscroll-behavior: contain;
     }
 
     /* Default styles for larger screens */
@@ -39,20 +53,13 @@
         line-height: 1.5;
     }
 
-    /* Media query for smaller screens */
-    @media (max-width: 768px) {
-        p {
-            font-size: 14px;
-            line-height: 1.3;
-        }
-    }
 
-
-    /* Fallback for browsers that don't support scroll-behavior */
-    @media screen and (prefers-reduced-motion: reduce) {
-        html {
-            scroll-behavior: auto;
-        }
+    #section1 {
+        background-image: url("https://img.freepik.com/free-vector/stylish-white-background-with-diagonal-lines_1017-33199.jpg?w=1380&t=st=1677915779~exp=1677916379~hmac=a38de51ad80663913476295250654193e327df579196ccab625d5898bad3cd40");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
     }
 
     #Overview {
@@ -72,15 +79,29 @@
         margin-bottom: 10px; /* Add some space between paragraphs */
     }
 
+    #Table {
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+        min-height: 100%;
+    }
+
+    table {
+    }
+
     footer {
         position: fixed;
         bottom: 0;
         width: 100%;
     }
 
+    #Gallery_section {
+        background-color: #dedcde; /* Change the background color to a dark blue */ /* Add some padding to the section */
+    }
+
+
 </style>
 <body>
-
+<!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <div class="container-fluid">
         <a class="navbar-brand" href="#"> <i class="bi bi-controller btn-icon"></i> </a>
@@ -113,6 +134,7 @@
         </div>
     </div>
 </nav>
+<!-- Welcome Section-->
 <section id="section1" class="d-flex justify-content-center align-items-center vh-100" data-aos="fade-up"
          data-aos-duration="1000" data-aos-once="true">
 
@@ -142,47 +164,35 @@
     </div>
 </section>
 
-<section
-        id="Overview"
-        class="d-flex justify-content-center align-items-center vh-100"
-        data-aos="fade-up"
-        data-aos-duration="1000"
-        data-aos-once="false"
->
-    <div class="container-fluid text-center">
+<!-- Overview Section-->
+<section id="Overview" class="d-flex justify-content-center align-items-center" data-aos="fade-up"
+         data-aos-duration="1000" data-aos-once="false" data-aos-offset="-200">
+    <div class="container-fluid text-center " style="margin-top: 50px">
         <div class="row">
             <div class="col-md-12">
                 <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Video Games</h2>
-                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
-                    In my free time, I enjoy playing video games as a hobby, with a particular focus on first-person
-                    shooter (FPS) games.
-                </p>
-                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
-                    I find the immersive nature of these games to be especially engaging, as I can
-                    fully embody the character I am playing and experience the game world from a first-person
-                    perspective.
-                </p>
-                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
-                    Some of my favorite FPS games include Valorant, CS:GO, and Overwatch, each of which
-                    presents unique challenges and requires strategic thinking and fast reflexes.
-                </p>
-                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
-                    In addition to FPS games, I also enjoy playing single-player games such as God of War and Red Dead
-                    Redemption, which
-                    offer rich, narrative-driven experiences that allow me to fully immerse myself in the game world and
-                    explore at my own pace.
-                </p>
-                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1200">
-                    Overall, gaming provides a fun and rewarding way for me to unwind and
-                    exercise my mind in my free time.
-                </p>
+                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">In my free time, I enjoy playing
+                    video games as a hobby, with a particular focus on first-person shooter (FPS) games. I find the
+                    immersive nature of these games to be especially engaging, as I can fully embody the character I am
+                    playing and experience the game world from a first-person perspective.</p>
+                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><br><br>Some of my favorite FPS
+                    games
+                    include Valorant, CS:GO, and Overwatch, each of which presents unique challenges and requires
+                    strategic thinking and fast reflexes.</p>
+                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">In addition to FPS games, I also
+                    enjoy playing single-player games such as God of War and Red Dead Redemption, which offer rich,
+                    narrative-driven experiences that allow me to fully immerse myself in the game world and explore at
+                    my own pace.</p>
+                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000"><br><br>Overall, gaming provides a
+                    fun and
+                    rewarding way for me to unwind and exercise my mind in my free time.</p>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Section 3 -->
-<section id="Table" class="bg-light text-light py-5 vh-100 text-center ">
+<!-- Table Section-->
+<section id="Table" class="bg text-light ">
     <div class="container-fluid text-center">
         <h2
                 class="text-center mb-5 text-dark"
@@ -217,7 +227,8 @@
                         <td style="animation-delay: 0.3s">2020</td>
                         <td style="animation-delay: 0.4s">PC</td>
                         <td style="animation-delay: 0.5s"><a href="https://playvalorant.com/en-us/"
-                                                             class="btn btn-primary text-decoration-none"><i
+                                                             target="_blank"
+                                                             class=" btn btn-primary text-decoration-none"><i
                                 class="bi bi-arrow-right-circle"></i> Learn More</a></td>
 
                     </tr>
@@ -228,7 +239,8 @@
                         <td style="animation-delay: 0.9s">PC</td>
                         <td><a
                                 href="https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/"
-                                class="btn btn-primary text-decoration-none"><i class="bi bi-arrow-right-circle"></i>
+                                target="_blank" class="btn btn-primary text-decoration-none"><i
+                                class="bi bi-arrow-right-circle"></i>
                             Learn More</a></td>
 
                     </tr>
@@ -237,7 +249,8 @@
                         <td style="animation-delay: 1.1s">First-person shooter</td>
                         <td style="animation-delay: 1.2s">2016</td>
                         <td style="animation-delay: 1.3s">PC, PlayStation 4, Xbox One, Nintendo Switch</td>
-                        <td><a href="https://playoverwatch.com/en-us/" class="btn btn-primary text-decoration-none"><i
+                        <td><a href="https://playoverwatch.com/en-us/" target="_blank"
+                               class="btn btn-primary text-decoration-none"><i
                                 class="bi bi-arrow-right-circle"></i> Learn More</a></td>
                     </tr>
                     <tr>
@@ -246,7 +259,8 @@
                         <td style="animation-delay: 1.6s">2018</td>
                         <td style="animation-delay: 1.7s">PlayStation 4, PlayStation 5</td>
                         <td><a href="https://www.playstation.com/en-us/games/god-of-war/"
-                               class="btn btn-primary text-decoration-none"><i class="bi bi-arrow-right-circle"></i>
+                               target="_blank" class="btn btn-primary text-decoration-none"><i
+                                class="bi bi-arrow-right-circle"></i>
                             Learn More</a></td>
                     </tr>
                     <tr>
@@ -255,99 +269,121 @@
                         <td style="animation-delay: 2.0s">2010</td>
                         <td style="animation-delay: 2.1s">PlayStation 3, Xbox 360</td>
                         <td><a href="https://www.rockstargames.com/reddeadredemption/"
-                               class="btn btn-primary text-decoration-none"><i class="bi bi-arrow-right-circle"></i>
+                               target="_blank" class="btn btn-primary text-decoration-none"><i
+                                class="bi bi-arrow-right-circle"></i>
                             Learn More</a></td>
                     </tr>
-
-
                     </tbody>
                 </table>
             </div>
         </div>
     </div>
 </section>
+<!-- Gallery Section-->
 <section id="Gallery"></section>
-<section id="Gallery_section" class="bg-dark text-light py-5" data-aos="fade-up"
+<section id="Gallery_section" class=" text-dark py-5" data-aos="fade-up"
          data-aos-duration="1000"
          data-aos-once="false">
     <div class="container">
-        <h2 class="text-center mb-5">Game Gallery</h2>
+        <h2 class="text-center text-dark mb-5">Game Gallery</h2>
         <div class="row">
-            <div class="col-sm-6 col-md-4 mb-4">
-                <div class="card">
-                    <a href="https://i.imgur.com/9SfjbkV.jpg" target="_blank">
-                        <img src="https://media.tenor.com/WsdWav-T_pgAAAAC/jett-duel-krinex.gif" alt="Valorant"
-                             class="card-img-top img-fluid rounded" loading="lazy">
-                    </a>
-                    <div class="card-body">
-                        <h4 class="card-title text-center text-dark">Valorant</h4>
-                    </div>
-                </div>
-            </div>
+            <div class="col-md-8 mx-auto">
+                <div id="gallery-carousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="https://i.imgur.com/9SfjbkV.jpg" target="_blank">
+                                <img src="https://media.tenor.com/WsdWav-T_pgAAAAC/jett-duel-krinex.gif" alt="Valorant"
+                                     class="d-block w-100 img-fluid rounded" loading="lazy">
+                            </a>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h4 class="text-light"
+                                    style="text-shadow: 2px 2px 4px #000000; font-size: 24px; position: absolute; bottom: 0; left: 0; right: 0; background-color: rgba(0, 0, 0, 0.5); padding: 10px;">
+                                    Valorant</h4>
+                            </div>
 
-            <div class="col-sm-6 col-md-4 mb-4">
-                <div class="card">
-                    <a href="https://media.tenor.com/gGWbe7r8TL0AAAAd/csgo-awp.gif" target="_blank">
-                        <img src="https://media.tenor.com/IIGtxhqmCHYAAAAC/gameplay-video-game.gif" alt="CS:GO"
-                             class="card-img-top img-fluid rounded" loading="lazy">
-                    </a>
-                    <div class="card-body">
-                        <h4 class="card-title text-center text-dark">CS:GO</h4>
-                    </div>
-                </div>
-            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://media.tenor.com/gGWbe7r8TL0AAAAd/csgo-awp.gif" target="_blank">
+                                <img src="https://media.tenor.com/IIGtxhqmCHYAAAAC/gameplay-video-game.gif" alt="CS:GO"
+                                     class="d-block w-100 img-fluid rounded" loading="lazy">
+                            </a>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h4 class="text-light"
+                                    style="text-shadow: 2px 2px 4px #000000; font-size: 24px; position: absolute; bottom: 0; left: 0; right: 0; background-color: rgba(0, 0, 0, 0.5); padding: 10px;">
+                                    CSGO</h4>
+                            </div>
 
-            <div class="col-sm-6 col-md-4 mb-4">
-                <div class="card">
-                    <a href="https://i.imgur.com/HqqcaH9.jpg" target="_blank">
-                        <img src="https://media.tenor.com/cEr8zQIXlugAAAAd/overwatch-dva.gif" alt="Overwatch"
-                             class="card-img-top img-fluid rounded" loading="lazy">
-                    </a>
-                    <div class="card-body">
-                        <h4 class="card-title text-center text-dark">Overwatch</h4>
-                    </div>
-                </div>
-            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://media.tenor.com/cEr8zQIXlugAAAAd/overwatch-dva.gif" target="_blank">
+                                <img src="https://media.tenor.com/cEr8zQIXlugAAAAd/overwatch-dva.gif" alt="CS:GO"
+                                     class="d-block w-100 img-fluid rounded" loading="lazy">
+                            </a>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h4 class="text-light"
+                                    style="text-shadow: 2px 2px 4px #000000; font-size: 24px; position: absolute; bottom: 0; left: 0; right: 0; background-color: rgba(0, 0, 0, 0.5); padding: 10px;">
+                                    Overwatch</h4>
+                            </div>
 
-            <div class="col-sm-6 col-md-4 mb-4">
-                <div class="card">
-                    <a href="https://i.imgur.com/HqqcaH9.jpg" target="_blank">
-                        <img src="https://media.tenor.com/scXZEcq4lQQAAAAd/god-of-war-kratos.gif" alt="God of War"
-                             class="card-img-top img-fluid rounded" loading="lazy">
-                    </a>
-                    <div class="card-body">
-                        <h4 class="card-title text-center text-dark">God of War</h4>
-                    </div>
-                </div>
-            </div>
+                        </div>
 
-            <div class="col-sm-6 col-md-4 mb-4">
-                <div class="card">
-                    <a href="https://i.imgur.com/HqqcaH9.jpg" target="_blank">
-                        <img src="https://media.tenor.com/HExoastQwvcAAAAC/red-dead-redemption-rdr2.gif"
-                             alt="Red Dead Redemption 2" class="card-img-top img-fluid rounded" loading="lazy">
-                    </a>
-                    <div class="card-body">
-                        <h4 class="card-title text-center text-dark">Red Dead Redemption 2</h4>
+                        <div class="carousel-item">
+                            <a href="https://media.tenor.com/cEr8zQIXlugAAAAd/overwatch-dva.gif" target="_blank">
+                                <img src="https://media.tenor.com/scXZEcq4lQQAAAAd/god-of-war-kratos.gif" alt="CS:GO"
+                                     class="d-block w-100 img-fluid rounded" loading="lazy">
+                            </a>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h4 class="text-light"
+                                    style="text-shadow: 2px 2px 4px #000000; font-size: 24px; position: absolute; bottom: 0; left: 0; right: 0; background-color: rgba(0, 0, 0, 0.5); padding: 10px;">
+                                    God of War</h4>
+                            </div>
+
+                        </div>
+
+                        <div class="carousel-item">
+                            <a href="https://media.tenor.com/cEr8zQIXlugAAAAd/overwatch-dva.gif" target="_blank">
+                                <img src="https://media.tenor.com/HExoastQwvcAAAAC/red-dead-redemption-rdr2.gif"
+                                     alt="CS:GO"
+                                     class="d-block w-100 img-fluid rounded" loading="lazy">
+                            </a>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h4 class="text-light"
+                                    style="text-shadow: 2px 2px 4px #000000; font-size: 24px; position: absolute; bottom: 0; left: 0; right: 0; background-color: rgba(0, 0, 0, 0.5); padding: 10px;">
+                                    Red Dead Redemption 2</h4>
+                            </div>
+
+                        </div>
+
+
                     </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#gallery-carousel"
+                            data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#gallery-carousel"
+                            data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-
-<section id="Contact" class="d-flex justify-content-center align-items-center vh-100" data-aos="fade-up"
+<!-- Contact Section -->
+<section id="Contact" class=" justify-content-center align-items-center vh-100 py-5" data-aos="fade-in"
          data-aos-duration="1000" data-aos-once="false">
-    <div class="container-fluid text-center">
+    <div class="container">
         <div class="row">
-            <div class="col-md-12">
-                <h2>Contact Me!</h2>
-
+            <div class="col-md-6 ">
+                <img src="https://i.imgur.com/q3y9aKp.jpg" alt="karthik" class="rounded-circle img-fluid"
+                     style="max-width: 100%;overflow: hidden ">
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-8 offset-md-2">
+
+            <div class="col-md-6">
+                <h2>Contact Me!</h2>
                 <form action="#" method="get">
                     <div class="form-group">
                         <label for="name"><i class="bi bi-person-fill"></i> Name</label>
@@ -365,24 +401,36 @@
                         <label for="phone"><i class="bi bi-chat-text-fill"></i> Message</label>
                         <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary"><i class="bi bi-envelope"></i> Send Message</button>
+                    <div class="mt-3">
+                        <p>Follow me on social media:</p>
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a href="https://www.instagram.com/karthikkkth/"><i
+                                    class="bi bi-instagram"></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/karthikthovinakere/"><i
+                                    class="bi bi-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="margin-bottom: 50px;"><i
+                            class="bi bi-envelope"></i> Send Message
+                    </button>
                 </form>
-
             </div>
         </div>
     </div>
 </section>
-
-
 </body>
 <footer>
-    <div class="bg-dark text-white text-center">
-        karthik Thovinakere - &copy;{% now 'Y' %}
+    <!-- Add a sticky copyright -->
+    <div class=" bg-dark text-white text-center
+                    ">
+        karthik Thovinakere - &copy;<span id="currentYear"></span>
     </div>
 </footer>
 </html>
 
 <script>
     AOS.init();
+    const currentYear = new Date().getFullYear();
+    document.getElementById("currentYear").textContent = currentYear;
 
 </script>
